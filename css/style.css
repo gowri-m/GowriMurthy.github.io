@@ -1,0 +1,311 @@
+body {
+    font-family: 'Roboto Slab', sans-serif, 'Arial';    /* margin: 65px; */
+}
+
+.skip {
+  background: black;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  /* display: none; */
+
+  /*Your code here*/
+  position: absolute; 
+  top: -30px;
+}
+
+/*Req 3b*/
+/*Write selector/rule property to position the skip class element*/
+.skip :focus{
+  /* position: absolute; */
+  top: 30px;
+}  
+
+#capital-main, #home-main > p{
+  margin: 20px;
+}
+
+header{
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto Slab', sans-serif, 'Times New Roman';
+  justify-content: space-between;
+  margin: 40px;
+  /* background-color: yellow; */
+}
+
+
+header > h1{
+    font-size: 1.5em;
+    align-content: center;
+    text-align: center;
+}
+
+nav{
+  /* margin: 40px; */
+  }
+
+  .nav_links{
+    display: flex;
+  } 
+
+ul li{
+  display: block;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.nav_item a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.nav_item a:focus{
+  text-decoration:underline;
+  color: teal;
+
+}
+
+.active a{
+  text-decoration:underline;
+  color: teal;
+  font-size: 20px;
+
+}
+
+
+.parallax{
+  background-image: url("../imgs/kapu.jpg");
+  height: 500px;
+
+   /* parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#parallax2{
+  background-image: url("../imgs/hampi3.jpg");
+  height: 350px;
+  width: auto;
+}
+
+
+
+main p {
+  /* height: 150px; */
+  line-height:35px;
+  /* margin: auto; */
+  font-size: 20px;
+}
+  
+
+#p1{
+  text-align: left;
+}
+
+#p2{
+  text-align: right;
+}
+
+.hero-image{
+  height: 400px;
+  /* width: fit-content; */
+  background-image: url(../imgs/vs2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero-image-text{
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15vw;
+  color: white;
+  /* opacity: 65%; */
+}
+
+#things-to-do{
+  margin: 30px 0;
+  font-size: 35px;
+}
+
+.container{
+  /*Your Code Here*/
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 30px;
+  /* background-color: yellow; */
+}
+
+.nandi-image,.food-image,.lalbagh-image, .brigade-image{
+  grid-column: 1/-1;
+  max-height: 650px;
+  overflow:hidden;
+  max-width: 950px;
+  /* width: fit-content; */
+}
+
+.nandi, .nandi-image{
+  grid-row: 1;
+}
+
+.nandi, .food, .lalbagh, .brigade{
+  grid-column: 2/span 2;
+  text-align: center;
+}
+
+.food, .food-image{
+  grid-row: 2;
+}
+
+.lalbagh,.lalbagh-image{
+  grid-row: 3;
+}
+
+.brigade, .brigade-image{
+  grid-row: 4;
+}
+
+
+.text{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  /*Your code here:*/
+  align-self: center;
+
+  
+}
+
+.gallery{
+  display: flex;
+  min-height: 600px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  overflow :hidden
+}
+
+/* div.gallery {
+  border: 1px solid #ccc;
+} */
+
+div.gallery img
+{
+  /* border: 5px #50C7C7 solid; */
+  width: 280px;
+  height: 250px;
+  /* width: 100%;
+  height: 100%; */
+  object-fit:cover;
+  /* padding: 5px; */
+  margin: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 250px;
+  perspective: 1000px;
+  /* object-fit:cover; */
+  margin: 15px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.flip-card:hover .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  border: transparent;
+  color: black;
+  /* margin: 5px; */
+}
+
+.flip-card-back {
+  background-color: #178897;
+  opacity: 75%;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.gallery p {
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer {
+  position: fixed;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  background-color: black;
+  /* opacity: 95%; */
+}
+/* #hamburger{
+  background-image: url("../imgs/hamburger.png");
+  min-height: 24px;
+  min-width: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+#hamburger :focus{
+  outline: none;
+} */
+
+  /* @media screen and (min-width: 850px) {
+
+    .nav_links{
+        display: inline-flex;
+        align-items: flex-start;
+    }
+
+    .nav_links li a{
+        padding: 8px;
+       
+      }
+
+    #hamburger{
+    display: none;
+    }
+
+  } */
