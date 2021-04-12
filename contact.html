@@ -13,23 +13,39 @@
   </head>
    
   <body>
-    <a class = "skip" href="#main">Skip to Main Content</a>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
       <h1>Experience Karnataka!</h1>
       <!-- <h2>Hello, World!</h2> -->
       <nav id="menu">
         <ul class="nav_links" >
-          <li cclass="nav_item"><a href="index.html">Home</a></li>
+          <li class="nav_item"><a href="index.html">Home</a></li>
           <li class="nav_item"><a href="capital.html">Capital</a></li>
           <li class="nav_item"><a href="must-see.html">Must see</a></li>
-          <li class="active"><a href="contact.html">Contact</a></li>
+          <li id="active"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
        
   </header>
   <main id = "main">
   
-    <p> Space for contact form</p>
+    <div class="contact_container">
+      <form  >
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="name" name="Name" placeholder="Please enter your name...">
+    
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Please enter your email...">
+  
+    
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
    
   </main> 
     <footer>
