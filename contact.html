@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- <script type="text/javascript" src="/script.js"></script> -->
-    <!-- <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <title>Contact</title>
@@ -15,8 +13,7 @@
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
-      <h1>Experience Karnataka!</h1>
-      <!-- <h2>Hello, World!</h2> -->
+      <h1 class="logo">Experience Karnataka!</h1>
       <nav id="menu">
         <ul class="nav_links" >
           <li class="nav_item"><a href="index.html">Home</a></li>
@@ -30,24 +27,26 @@
   <main id = "main">
   
     <div class="contact_container">
-      <form  >
+      <form action="https://formspree.io/f/xgervqvn" method="POST" id="contact-form" class="form">
     
-        <label for="fname">First Name</label>
+        <label for="fname"> Name</label>
         <input type="text" id="name" name="Name" placeholder="Please enter your name...">
     
         <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Please enter your email...">
+        <input type="email" id="email" name="Email" placeholder="Please enter your email...">
   
     
         <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea id="message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
     
         <input type="submit" value="Submit">
     
       </form>
+
     </div>
    
   </main> 
+  
     <footer>
       <p>Gowri Murthy, University of Michigan School of Information</p>
     </footer>
